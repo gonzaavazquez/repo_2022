@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(248, 248, 129);
+}
+
+.grilla_index{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 200px 1000px 100px ;
+    grid-template-areas: "header"
+                        "nav"
+                        "main"
+                        "footer";
+
+}
+
+@media only screen and(max-width:600px){
+
+}
+    
+
+
+.header_index{
+    grid-area: header;
+
+}
+
+
+.titulo_index{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    background-color: beige;
+    font-style: italic;
+    font-weight: normal;
+    font-family: shadows into light;
+}
+
+.nav_index{
+    
+    background-image: url(/img/icono.gatos.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    background-color: rgb(216, 216, 205);
+    grid-area: nav;
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ul_index{
+    width: 70%;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    
+
+}
+
+
+
+
+.ul_index a{
+    text-decoration: none;
+    font-family: luckiest guy;
+    font-weight: 200;
+    font-style: inherit;
+    font-size: 30px;
+    color: rgb(109, 106, 106);
+    
+}
+
+img{
+    height: 100%;
+}
+
+
+
+.main_index{
+    display: flex;
+    justify-content: center;
+}
+.div_index{
+    height: 500px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+}
+
+
+.imagen_index{
+    height: 500px;
+    width: 30%;
+    transform: translate(40px,20px);
+}
+
+
+.h2_index{
+    font-size: 100px;
+    font-style: italic;
+    font-family: Mochiy Pop One;
+    text-align: center;
+}
+
+.p1_index{
+    text-align: center;
+    font-size: 30px;
+    background-color: orange;
+    background-image: linear-gradient(to right, yellow, rgb(255, 195, 83));
+}
+
+
+.footer{
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.grilla_preguntas{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 200px 800px 100px;
+    grid-template-areas:"header"
+                        "nav"
+                        "main"
+                        "footer" ;
+}
+
+.header_preguntas{
+    grid-area: header;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+
+}
+
+.titulo_preguntas{
+   
+    font-style: italic;
+    font-weight: normal;
+    font-family: shadows into light;
+}
+
+
+.ul_preguntas{
+    
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    background-color: rgb(216, 216, 205)
+}
+
+.ul_preguntas a{
+    text-decoration: none;
+    font-family: luckiest guy;
+    font-weight: 200;
+    font-style: inherit;
+    font-size: 30px;
+    color: rgb(109, 106, 106);
+}
+
+.main_preguntas{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    font-family:josefin sans ;
+}
+
+.lista_preguntas{
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+
+}
+.lista_preguntas li{
+    list-style-type: none;
+}
+
+.grilla_ubicacion{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 200px 800px 100px;
+    grid-template-areas: "header"
+                        "nav"
+                        "main"
+                        "footer";
+}
+
+.header_ubicacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
