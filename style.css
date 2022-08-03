@@ -16,12 +16,34 @@ body{
                         "main"
                         "footer";
 
-}
 
-@media only screen and(max-width:600px){
 
 }
     
+@media (max-width:600px){
+
+    .grilla_index{
+        height: 1600px;
+        grid-template-columns: 100%;
+        grid-template-rows: 100px 200px 1000px 300px;
+        grid-template-areas: "header"
+                            "nav"
+                            "main"
+                            "footer";
+
+       align-content: space-around;
+       justify-content: center;                     
+                            
+                    
+    }
+
+    .ul_index{
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+}    
 
 
 .header_index{
@@ -164,7 +186,7 @@ img{
     justify-content: space-around;
     align-items: center;
     list-style-type: none;
-    background-color: rgb(216, 216, 205)
+    background-color: rgb(216, 216, 205);
 }
 
 .ul_preguntas a{
@@ -213,4 +235,63 @@ img{
     justify-content: center;
     align-items: center;
 }
+
+.grilla_contacto{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 200px 800px 100px;
+    grid-template-areas: "header"
+                        "nav"
+                        "main"
+                        "footer";
+}
+
+
+
+.h1_contacto{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+    font-style: italic;
+    font-weight: normal;
+    font-family: shadows into light;
+}
+
+.ul_contacto{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    background-color: rgb(216, 216, 205);
+
+}
+
+.ul_contacto a{
+    text-decoration: none;
+    font-family: luckiest guy;
+    font-weight: 200;
+    font-style: inherit;
+    font-size: 30px;
+    color: rgb(109, 106, 106);
+
+
+}
+
+.section_contacto{
+    height: 800px;
+   
+}
+
+.form_contacto{
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
 
