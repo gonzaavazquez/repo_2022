@@ -43,6 +43,7 @@ body{
         align-items: center;
     }
 
+
 }    
 
 
@@ -294,4 +295,7 @@ img{
     align-items: center;
 }
 
+.form_contacto :hover{
+    transform: scale(2,2);
+}
 
