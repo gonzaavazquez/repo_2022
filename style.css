@@ -22,32 +22,6 @@ body{
 
 
 }
-    
-@media (max-width:600px){
-
-    .grilla_index{
-        height: 1600px;
-        grid-template-columns: 100%;
-        grid-template-rows: 100px 200px 1000px 300px;
-        grid-template-areas: "header"
-                            "nav"
-                            "main"
-                            "footer";
-
-       align-content: space-around;
-       justify-content: center;                     
-                            
-                    
-    }
-
-    .ul_index{
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-
-
-}    
 
 
 .header_index{
@@ -155,6 +129,36 @@ img{
     align-items: flex-end;
 }
 
+@media (max-width:600px){
+
+    .grilla_index{
+        height: 1600px;
+        grid-template-columns: 100%;
+        grid-template-rows: 100px 200px 1000px 300px;
+        grid-template-areas: "header"
+                            "nav"
+                            "main"
+                            "footer";
+
+       align-content: space-around;
+       justify-content: center;                     
+                            
+                    
+    }
+
+    .ul_index{
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+
+}    
+
+
+
+
+
 .grilla_preguntas{
     display: grid;
     grid-template-columns: 100%;
@@ -224,15 +228,22 @@ img{
     list-style-type: none;
 }
 
-.grilla_ubicacion{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 100px 200px 800px 100px;
-    grid-template-areas: "header"
-                        "nav"
-                        "main"
-                        "footer";
-}
+@media (max-width:600px) {
+    .ul_preguntas{
+        flex-direction: column;
+        height:300px ;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+
+} 
+
+
+
+
+
+
 
 .header_ubicacion{
     display: flex;
@@ -256,8 +267,41 @@ img{
     font-size: 60px;
 }
 
+.main_ubicacion{
+    height: 1800px;
+}
+
+.div_ubicacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bi-arrow-down-square{
+    font-size: 50px;
+}
+
+.bi-arrow-down-square :hover{
+
+}
 
 
+
+.section_ubicacion{
+    height: 1800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.container{
+    height: 500px;
+    width: 100%;
+    background-color: aqua;
+}
 
 .grilla_contacto{
     display: grid;
@@ -321,3 +365,96 @@ img{
     transform: scale(2,2);
 }
 
+
+.h1_productos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: beige;
+    font-style: italic;
+    font-weight: normal;
+    font-family: shadows into light;
+
+}
+
+.section_productos{
+    height: 1800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+
+
+
+.img_comida{
+    height: 450px;
+    width: 30%;
+}
+
+.img_limpieza{
+    height:300px ;
+    width: 30%;
+}
+
+.img_cepillo{
+    height:320px ;
+    width: 30%;
+}
+
+.div_productos{
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.div_alimentos{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.div_higiene{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.div_cuidados{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.aside_productos{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.parrafo_aside{
+    background-color: rgb(255, 167, 4);
+    background-image: linear-gradient(to left, yellow, rgb(255, 208, 0));
+}
+
+.div_redes{
+    display: flex;
+    justify-content: space-around;
+
+}
+.footer_productos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
