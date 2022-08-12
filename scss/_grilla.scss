@@ -1,0 +1,87 @@
+
+.grilla_index{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 200px 1000px 100px ;
+    grid-template-areas: "header"
+                        "nav"
+                        "main"
+                        "footer";
+
+
+
+}
+
+
+
+
+
+@media screen and (max-width:600px){
+
+    .grilla_index{
+        height: 1600px;
+        grid-template-columns: 100%;
+        grid-template-rows: 100px 200px 1000px 300px;
+        grid-template-areas: "header"
+                            "nav"
+                            "main"
+                            "footer";
+
+       align-content: space-around;
+       justify-content: center;                     
+                            
+                    
+    }
+
+    .ul_index{
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+
+}    
+
+
+
+
+
+
+
+@media screen and (max-width:600px) {
+    .ul_preguntas{
+        flex-direction: column;
+        height:300px ;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+
+} 
+
+
+
+
+
+
+.grilla_contacto{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 200px 800px 100px;
+    grid-template-areas: "header"
+                        "nav"
+                        "main"
+                        "footer";
+}
+
+
+
+.grilla_preguntas{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 200px 800px 100px;
+    grid-template-areas:"header"
+                        "nav"
+                        "main"
+                        "footer" ;
+}
