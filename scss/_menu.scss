@@ -3,17 +3,23 @@
 
 }
 
-
-.titulo_index{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    width: 100%;
-    background-color: beige;
+.titulo{
     font-style: italic;
     font-weight: normal;
     font-family: shadows into light;
+    align-items: center;
+}
+
+.titulo_index{
+    @extend .titulo;
+    
+    display: flex;
+    justify-content: center;
+    
+    height: 100px;
+    width: 100%;
+    background-color: beige;
+    
 }
 
 .nav_index{
@@ -64,13 +70,15 @@ img{
 .main_index{
     display: flex;
     justify-content: center;
-}
-.div_index{
-    height: 500px;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content:center ;
+
+    .div_index{
+        height: 500px;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content:center ;
+    }
+    
 }
 
 
@@ -105,7 +113,14 @@ img{
 
 
 
+@mixin estilo_alerta( $tamanio_letra,$color_fondo,$color_letra){
 
+    font-size:$tamanio_letra;
+    background-color:$color_fondo;
+    color: $color_letra; 
+
+    
+}
 
 
 
@@ -115,15 +130,13 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: beige;
+    @include estilo_alerta(black, beige)
 
 }
 
 .titulo_preguntas{
    
-    font-style: italic;
-    font-weight: normal;
-    font-family: shadows into light;
+   @extend .titulo;
 }
 
 
@@ -208,12 +221,6 @@ img{
 .bi-arrow-down-square{
     font-size: 50px;
 }
-
-.bi-arrow-down-square :hover{
-
-}
-
-
 
 .section_ubicacion{
     height: 1800px;
@@ -370,9 +377,9 @@ img{
     justify-content: space-around;
 
 }
+
 .footer_productos{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
