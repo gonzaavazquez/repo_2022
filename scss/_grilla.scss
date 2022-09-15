@@ -67,7 +67,7 @@
 .grilla_contacto{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 100px 200px 800px 100px;
+    grid-template-rows: 100px 150px 800px 100px;
     grid-template-areas: "header"
                         "nav"
                         "main"
@@ -84,4 +84,14 @@
                         "nav"
                         "main"
                         "footer" ;
+}
+
+.grilla_ubicacion{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 200px 1800px 100px;
+    grid-template-areas: "header"
+                        "nav"
+                        "main"
+                        "footer";
 }
